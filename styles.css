@@ -1,0 +1,234 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  h2{
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+  
+  nav ul.menu {
+    display: flex;
+  }
+  
+  nav ul.menu li {
+    margin-left: 20px;
+    list-style: none;
+  }
+  
+  nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 100%);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+  
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background:rgb(207, 207, 207);
+    color: #111;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #eee;
+  }
+  
+  
+  .about .container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .about-content p {
+    flex-basis: calc(50% - 10px); /* Adjust as needed */
+  }
+
+  .about h2 {
+    font-size: 2rem; /* You can adjust the size as needed */
+}
+
+  
+  .about-content img {
+    max-width: calc(50% - 10px); /* Adjust as needed */
+    border-radius: 5px;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .about-content p {
+      flex-basis: 100%;
+    }
+  
+    .about-content img {
+      max-width: 100%;
+    }
+  
+    .burger {
+      display: flex; /* Change display property to flex */
+      flex-direction: column;
+      cursor: pointer;
+    }
+    nav ul.menu {
+        display:none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        text-align: center;
+        top: 60px;
+        z-index: 100; /* Ensure it's above other content */
+      }
+    
+      nav ul.menu.active {
+        display: block;
+      }
+    
+      nav ul.menu.active li {
+        margin-top: 10px;
+      }
+  }
+  
+  
+  
+  
+ /* Services Section */
+.services {
+  padding: 100px 0;
+}
+
+.services .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services .heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.services .heading h2 {
+  margin-bottom: 10px;
+}
+
+.service {
+  width: 30%; /* Adjust width as needed */
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.service p {
+  font-size: 1rem; /* Adjust as needed */
+}

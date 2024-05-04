@@ -61,7 +61,9 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    align-items: flex-start; /* Align items to the left */
   }
+  
   
   .line {
     width: 25px;
@@ -169,69 +171,97 @@
       max-width: 100%;
     }
   
-    .burger {
-      display: flex; /* Change display property to flex */
-      flex-direction: column;
-      cursor: pointer;
-    }
-    nav ul.menu {
-        display:none;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.7);
-        width: 100%;
-        text-align: center;
-        top: 60px;
-        z-index: 100; /* Ensure it's above other content */
+        .burger {
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+        }
+        nav ul.menu {
+          display: none;
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.7);
+          width: 30%;
+          text-align: center;
+          top: 60px;
+          left: 0; /* Position the menu to the left */
+          z-index: 100;
+          padding-top: 40px;
+        }
+        nav ul.menu.active {
+          display: block;
+        }
+        nav ul.menu.active li {
+          margin-top: 10px;
+        }
       }
-    
-      nav ul.menu.active {
-        display: block;
-      }
-    
-      nav ul.menu.active li {
-        margin-top: 10px;
-      }
-  }
+      
+
   
   
   
   
  /* Services Section */
+ .fa-scissors {
+    margin-top: 30px;
+    font-size: 40px; /* Default size */
+  }
+
+  .fa-droplet {
+    margin-top: 30px;
+    font-size: 40px; /* Default size */
+  }
+
+  .fa-wand-magic-sparkles {
+    margin-top: 30px;
+    font-size: 40px; /* Default size */
+  }
+
+/* Services Section */
 .services {
-  padding: 100px 0;
-}
-
-.services .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.services .heading {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-
-.services .heading h2 {
-  margin-bottom: 10px;
-}
-
-.service {
-  width: 30%; /* Adjust width as needed */
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.service h3 {
-  font-size: 1.5rem;
-  margin-top: 20px;
-}
-
-.service p {
-  font-size: 1rem; /* Adjust as needed */
-}
+    padding: 100px 0;
+  }
+  
+  .services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center services horizontally */
+  }
+  
+  .services .heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  .services .heading h2 {
+    margin-bottom: 10px;
+  }
+  
+  .service {
+    width: 30%; /* Adjust width for desktop devices */
+    margin: 0 15px 50px; /* Add margin between service items */
+    text-align: center;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .service p {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .service {
+      width: 90%; /* Adjust width for mobile devices */
+      margin: 0 auto 50px; /* Center service items and add margin */
+    }
+  }
+  
+  
+  
 
 footer {
     background: rgba(0, 0, 0, 0.8);
@@ -273,6 +303,8 @@ footer {
       height: 250px; /* Adjust height as needed */
       margin-top: 20px; /* Adjust margin as needed */
     }
+
+
   }
   
   

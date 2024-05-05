@@ -198,7 +198,8 @@
 
   
       .working-hours {
-        padding: 50px 0;
+        padding: 30px 10px;
+        margin-top: 10px;
       }
       
       .working-hours .container {
@@ -288,6 +289,10 @@
       width: 90%; /* Adjust width for mobile devices */
       margin: 0 auto 50px; /* Center service items and add margin */
     }
+
+    .working-hours {
+        margin-top: -60px;
+      }
   }
   
   

@@ -183,12 +183,11 @@
           display: none;
           position: absolute;
           background-color: rgba(0, 0, 0, 0.7);
-          width: 30%;
-          text-align: center;
-          top: 60px;
+          width: 40%;
+          top: 120px;
           left: 0; /* Position the menu to the left */
           z-index: 100;
-          padding-top: 40px;
+        
         }
         nav ul.menu.active {
           display: block;

@@ -39,13 +39,12 @@
     justify-content: space-between;
   }
   
-  /* Add these styles to your CSS file */
+/* Add these styles to your CSS file */
 .logo {
     max-width: 50%;
     height: auto;
     /* Adjust the max-width and other properties as needed */
 }
-
   
   nav ul.menu {
     display: flex;
@@ -197,6 +196,16 @@
         nav ul.menu.active li {
           margin-top: 10px;
         }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .logo {
+            order: -1; /* Move the logo to the left */
+        }
       }
       
 
@@ -252,7 +261,7 @@
 
 /* Services Section */
 .services {
-    padding: 100px 0;
+    padding: 30px 0;
   }
   
   .services .container {

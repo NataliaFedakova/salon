@@ -39,9 +39,13 @@
     justify-content: space-between;
   }
   
-  .logo {
-    font-size: 1.2rem;
-  }
+  /* Add these styles to your CSS file */
+.logo {
+    max-width: 50%;
+    height: auto;
+    /* Adjust the max-width and other properties as needed */
+}
+
   
   nav ul.menu {
     display: flex;

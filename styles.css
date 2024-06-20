@@ -319,3 +319,31 @@ a {
     margin-top: 20px; /* Adjust margin as needed */
   }
 }
+
+
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: none; /* Hidden by default */
+  z-index: 1000;
+}
+
+.cookie-consent p {
+  margin: 0;
+  display: inline;
+}
+
+.cookie-consent .btn {
+  background: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+}
